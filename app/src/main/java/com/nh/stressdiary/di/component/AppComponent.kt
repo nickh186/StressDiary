@@ -4,6 +4,7 @@ import android.app.Application
 import com.nh.stressdiary.StressDiaryApplication
 import com.nh.stressdiary.di.module.ActivityModule
 import com.nh.stressdiary.di.module.AppModule
+import com.nh.stressdiary.di.module.DbModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -15,6 +16,7 @@ interface AppComponent :AndroidInjector<Application>{
     @Component.Builder
     interface Builder {
         @BindsInstance fun application(app: Application): Builder
+        @BindsInstance fun dbModule(dbModule : DbModule): Builder
         fun build():AppComponent
     }
 
