@@ -1,6 +1,6 @@
 package com.nh.stressdiary.di.module
 
-import com.nh.stressdiary.ui.MainFragment
+import com.nh.stressdiary.ui.stress.StressItemFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -8,5 +8,5 @@ import dagger.android.ContributesAndroidInjector
 abstract class FragmentModule {
 
     @ContributesAndroidInjector
-    abstract fun contributeMainFragment():MainFragment
+    abstract fun contributeStressFragment(): StressItemFragment
 }

@@ -3,6 +3,7 @@ package com.nh.stressdiary
 import android.app.Activity
 import android.app.Application
 import com.nh.stressdiary.di.component.DaggerAppComponent
+import com.nh.stressdiary.di.module.DbModule
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
@@ -21,6 +22,7 @@ class StressDiaryApplication: Application(), HasActivityInjector {
         super.onCreate()
         DaggerAppComponent.builder()
             .application(this)
+            .dbModule(DbModule())
             .build()
             .inject(this)
     }
