@@ -47,4 +47,11 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$dagger"
     implementation "androidx.constraintlayout:constraintlayout:$constraint"
     implementation "androidx.constraintlayout:constraintlayout-solver:$constraint"
+
+    implementation "androidx.recyclerview:recyclerview:$recyclerView"
+    implementation "androidx.recyclerview:recyclerview-selection:$recyclerView"
+    implementation "com.google.android.material:material:$floatingActionButton"
+    implementation "androidx.vectordrawable:vectordrawable-animated:$vectorDrawable"
+    implementation "androidx.vectordrawable:vectordrawable:$vectorDrawable"
+
 }

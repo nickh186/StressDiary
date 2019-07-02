@@ -1,6 +1,6 @@
 package com.nh.stressdiary.di.module
 
-import com.nh.stressdiary.ui.MainActivity
+import com.nh.stressdiary.ui.main.activity.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
